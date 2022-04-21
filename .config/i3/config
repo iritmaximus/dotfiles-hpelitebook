@@ -1,0 +1,378 @@
+
+
+##################################################
+# my i3 config.
+# almost all keybinds are keycodes because of dvorak
+# 
+# 1. keybinds
+# 2. startup scripts
+# 3. i3 gaps / window things
+
+
+
+# windows key as mod
+set $mod Mod4
+
+# start a terminal (Enter)
+bindcode $mod+36 exec kitty
+
+# kill focused window (q)
+bindcode $mod+Shift+24 kill
+
+# start dmenu (a program launcher) (d)
+bindcode $mod+Shift+40 exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi (d)
+bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+
+
+# change focus (h, j, k, l)
+bindcode $mod+43 focus left
+bindcode $mod+44 focus down
+bindcode $mod+45 focus up
+bindcode $mod+46 focus right
+
+# alternatively, you can use the cursor keys (arrow keys)
+bindcode $mod+113 focus left
+bindcode $mod+116 focus down
+bindcode $mod+111 focus up
+bindcode $mod+114 focus right
+
+# move focused window
+bindcode $mod+Shift+43 move left
+bindcode $mod+Shift+44 move down
+bindcode $mod+Shift+45 move up
+bindcode $mod+Shift+46 move right
+
+# alternatively, you can use the cursor keys:
+bindcode $mod+Shift+113 move left
+bindcode $mod+Shift+116 move down
+bindcode $mod+Shift+111 move up
+bindcode $mod+Shift+114 move right
+
+
+# enter fullscreen mode for the focused container (f)
+bindcode $mod+41 fullscreen toggle
+# split in horizontal orientation (h as 43)
+bindcode $mod+56 split h
+# split in vertical orientation
+bindcode $mod+55 split v
+
+
+
+# change container layout (stacked, tabbed, toggle split)
+bindcode $mod+39 layout stacking
+bindcode $mod+25 layout tabbed
+bindcode $mod+26 layout toggle split
+
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+# toggle tiling / floating
+bindcode $mod+Shift+65 floating toggle
+# change focus between tiling / floating windows
+bindcode $mod+65 focus mode_toggle
+
+
+# focus the parent container
+bindcode $mod+38 focus parent
+# focus the child container
+#bindsym $mod+d focus child
+
+
+# reload the configuration file
+bindcode $mod+Shift+54 reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindcode $mod+Shift+27 restart
+# exit i3 (logs you out of your X session)
+bindcode $mod+Shift+26 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+
+
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindcode 43 resize shrink width 10 px or 10 ppt
+        bindcode 44 resize grow height 10 px or 10 ppt
+        bindcode 45 resize shrink height 10 px or 10 ppt
+        bindcode 46 resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindcode 113 resize shrink width 10 px or 10 ppt
+        bindcode 116 resize grow height 10 px or 10 ppt
+        bindcode 111 resize shrink height 10 px or 10 ppt
+        bindcode 114 resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindcode 36 mode "default"
+        bindcode 9 mode "default"
+        bindcode $mod+27 mode "default"
+}
+
+bindcode $mod+27 mode "resize"
+
+
+
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1. Terminals"
+set $ws2 "2. Firefox"
+set $ws3 "3. Coding"
+set $ws4 "4."
+set $ws5 "5."
+set $ws6 "6."
+set $ws7 "7."
+set $ws8 "8."
+set $ws9 "9."
+set $ws10 "10. Music"
+
+# switch to workspace
+bindcode $mod+10 workspace number $ws1
+bindcode $mod+11 workspace number $ws2
+bindcode $mod+12 workspace number $ws3
+bindcode $mod+13 workspace number $ws4
+bindcode $mod+14 workspace number $ws5
+bindcode $mod+15 workspace number $ws6
+bindcode $mod+16 workspace number $ws7
+bindcode $mod+17 workspace number $ws8
+bindcode $mod+18 workspace number $ws9
+bindcode $mod+19 workspace number $ws10
+
+
+# move focused container to workspace
+bindcode $mod+Shift+10 move container to workspace number $ws1
+bindcode $mod+Shift+11 move container to workspace number $ws2
+bindcode $mod+Shift+12 move container to workspace number $ws3
+bindcode $mod+Shift+13 move container to workspace number $ws4
+bindcode $mod+Shift+14 move container to workspace number $ws5
+bindcode $mod+Shift+15 move container to workspace number $ws6
+bindcode $mod+Shift+16 move container to workspace number $ws7
+bindcode $mod+Shift+17 move container to workspace number $ws8
+bindcode $mod+Shift+18 move container to workspace number $ws9
+bindcode $mod+Shift+19 move container to workspace number $ws10
+
+# siirrä workspace eri monitoriin
+bindcode $mod+Ctrl+114 move workspace to output right
+bindcode $mod+Ctrl+113 move workspace to output left
+# move with hjkl
+bindcode $mod+Ctrl+43 move workspace to output right
+bindcode $mod+Ctrl+44 move workspace to output down
+bindcode $mod+Ctrl+45 move workspace to output up
+bindcode $mod+Ctrl+46 move workspace to output left
+
+# terminaalit ws1, firefox 2 ja vscode 3 (kunhan saan selville mikä sen koodin on lol)
+#assign [class="Terminator"] 1
+#assign [class="Firefox"] 2
+#assign [class="Code"] 3
+
+
+
+
+# Use pactl to adjust volume in PulseAudio.
+set $refresh_i3status killall -SIGUSR1 i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id  pactl set-sink-volume @DEFAULT_SINK@ +5% && dunstify -h string:x-canonical-private-synchronous:audio "Volume: " -h int:value:"`ponymix get-volume`"
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && dunstify -h string:x-canonical-private-synchronous:audio "Volume: " -h int:value:"`ponymix get-volume`"
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && dunstify -h string:x-canonical-private-synchronous:audio "Volume: Muted"
+
+# omat lisät näihin läppärinappuloihin
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 && dunstify -h string:x-canonical-private-synchronous:brightness "Brightness: " -h int:value:"`xbacklight -get`"
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 && dunstify -h string:x-canonical-private-synchronous:brightness "Brightness: " -h int:value:"`xbacklight -get`"
+
+
+# I3 lock shortcut 
+bindcode $mod+Shift+38 exec --no-startup-id i3lock-fancy-rapid 5 3
+
+
+# näppäimistön vaihtoscripti 
+bindcode 66 exec /home/martti/.keyboards/swap-layout.sh
+
+
+# Set shut down, restart and locking features
+bindsym $mod+F12 mode "$mode_system"
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+
+
+
+
+##################################################
+
+
+
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:monospace 8
+
+# This font is widely installed, provides lots of unicode glyphs, right-to-left
+# text rendering and scalability on retina/hidpi displays (thanks to pango).
+#font pango:DejaVu Sans Mono 8
+
+
+
+
+
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock i3lock-fancy-rapid 5 3 -g --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+# Notification daemon (?) emt ainakin notificaatioita :)
+#exec --no-startup-id dunst
+
+# transparency TODO shadows
+exec --no-startup-id picom --experimental-backends --backend glx -b 
+
+# polybar launch script
+#exec_always --no-startup-id .config/polybar/launch.sh
+#exec_always --no-startup-id -c .config/polybar/config-example .config/polybar/launch-example.sh
+exec_always --no-startup-id .config/polybar/hack/scripts/pywal.sh .wallpapers
+exec_always --no-startup-id .config/polybar/launch.sh --hack
+exec_always --no-startup-id .config/dunst/launchdunst.sh
+
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+#bar {
+#        position top
+#        status_command i3status
+        #status_command i3blocks
+#        colors {
+#                background $borderActive
+#                statusline <color>
+#                 separator <color>
+#        }      
+#}
+
+
+
+
+##################################################
+
+# i3 gaps things
+
+
+# Ei reunoja ikkunoiden välissä
+default_border none 
+
+# poistaa reunat näytön reunoilta 
+hide_edge_borders both
+
+# gapsien koko
+gaps inner 10
+gaps outer 5
+
+# jos ainut ikkuna, niin ei gapseja
+smart_gaps on
+
+# en oo ihan varma tarviiko tätä oikeasti
+for_window [class="^.*"] border pixel 0
+#for_window [class="qt5ct"] floating enable sticky enable border normal
+
+# seuraako fookkus hiirtä
+focus_follows_mouse no
+
+# vaihtuuko fokus jos uusi ikkuna ja se haluu emt xd
+focus_on_window_activation smart
+
+# meneekö aiempaan ws jos painaa samaa ws uudestaan
+workspace_auto_back_and_forth no
+
+
+
+
+
+##################################################
+
+
+
+# Set Colors
+set_from_resource $hc-color i3wm.color0         #FFFFFF
+set_from_resource $bg-color i3wm.background     #32302f
+set_from_resource $sc-color i3wm.color0         #FFFFFF
+set_from_resource $fg-color i3wm.foreground     #FFFFFF
+
+# Black + DarkGrey
+set_from_resource $color0   i3wm.color0         #262626
+set_from_resource $color8   i3wm.color8         #928374
+
+# DarkRed + Red
+set_from_resource $color1   i3wm.color1         #cc241d
+set_from_resource $color9   i3wm.color9         #fb4934
+
+# DarkGreen + Light Green
+set_from_resource $color2   i3wm.color2         #98971a
+set_from_resource $color10  i3wm.color10        #b8bb26
+
+# DarkYellow + Yellow
+set_from_resource $color3   i3wm.color3         #d79921
+set_from_resource $color11  i3wm.color11        #fabd2f
+
+# DarkBlue + Blue
+set_from_resource $color4   i3wm.color4         #458588
+set_from_resource $color12  i3wm.color12        #83a598
+
+# DarkMagenta + Magenta
+set_from_resource $color5   i3wm.color5         #b16286
+set_from_resource $color13  i3wm.color13        #d3869b
+
+# DarkCyan + Cyan
+set_from_resource $color6   i3wm.color6         #689d6a
+set_from_resource $color14  i3wm.color14        #8ec07c
+
+# LightGrey + White
+set_from_resource $color7   i3wm.color7         #a89984
+set_from_resource $color15  i3wm.color15        #ebdbb2
+
+# Border
+set_from_resource $color16  i3wm.color16        #404040
+
+# i'm not entirely sure what these colors are but of well
+# set $borderInactive #928374
+set_from_resource $borderInactive i3wm.color7     #403a37
+set_from_resource $borderActive i3wm.background   #504945
+
+
+
+# Window Colors
+#			                    Border		        Background            Text            Indicator
+client.focused          $borderActive     $borderActive       $borderActive     $borderActive
+client.focused_inactive $borderInactive   $borderInactive     $borderInactive   $borderInactive
+client.unfocused        $borderInactive   $borderInactive     $borderInactive   $borderInactive
+client.urgent           $color9   	      $color9	            $color9    	      $color9
+client.background       $bg-color
+
+
+
+
+# This file has been auto-generated by i3-config-wizard(1).
+# It will not be overwritten, so edit it as you like.
+#
+# Should you change your keyboard layout some time, delete
+# this file and re-run i3-config-wizard(1).
+#
+
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
