@@ -119,6 +119,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
 Plug 'somini/vim-autoclose'
+Plug 'Yggdroot/indentLine'
 
 
 Plug 'vimwiki/vimwiki'
@@ -263,3 +264,11 @@ nmap <Leader>L <Plug>(easymotion-overwin-line)
 " Move to word
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+
+" Inden line thing
+"
+let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " what chars are used to show indention xd
+"let g:indentLine_setColors = 0 " set your own color
+"let g:indentLine_bgcolor_term = 202
+let g:indentLine_color_term = 239

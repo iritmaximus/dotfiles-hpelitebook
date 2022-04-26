@@ -28,6 +28,7 @@
 .config/mpd/state
 .config/mpd/sticker.sql
 .config/ncmpcpp/error.log
+.config/ncspot/userstate.cbor
 
 .config/pulse/
 .config/yay
