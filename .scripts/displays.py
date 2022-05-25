@@ -32,20 +32,65 @@ def getsetups():
         print("no autorandr in .config")
         return
 
-    print("autorandr found in .config")
+    print("autorandr found in .config...")
+    print()
     setups = os.listdir(HOME + CONFIG + RANDR)
-    for config in setups:
-        print(config)
 
     return setups
 
 
-def main():
-    print(HOME)
-    print(CONFIG)
-    print()
+def asksetup(setups):
+    """
+    Asks the user for the wanted setup and returns the wanted setup
+    """
 
-    getsetups()
+    print("Choose wanted setup:")
+
+    for x in setups:
+        print(x)
+
+    print()
+    print("> ", end="")
+    userinput = str(input())
+
+
+    if userinput in setups:
+        print(f"{userinput} setup found!")
+        cmd = "set"
+
+    else:
+        print(f"{userinput} not in setups")
+        print(f"Would you like to add {userinput} as the current setup?")
+        cmd = "new"
+
+    return cmd, userinput
+
+
+def setrandr(userinput):
+    """
+    gets user input and executes the autorandr setup given by the user
+    """
+    print("Setting the autorandr setup...")
+
+
+def createrandr(userinput):
+
+
+    print("Creating new autorandr setup...")
+
+
+
+def main():
+    setups = getsetups()
+    cmd, userinput = asksetup(setups)
+    if cmd == "set":
+        setrandr(userinput)
+
+    elif cmd == "new":
+        createrandr(userinput)
+
+    else:
+        print("Error")
 
 
 if __name__ == "__main__":

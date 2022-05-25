@@ -3,14 +3,18 @@
 .cargo/
 .dwm/
 .gnupg/
+.java/
 .local/
 .lyrics/
+.m2/
 .mozilla/
 .npm/
 .pki/
+.runelite/
 .ssh/
 .st/
 .stack/
+.steam/
 .thunderbird/
 .vim/plugged
 .vscode
@@ -18,9 +22,14 @@
 
 .config/coc
 .config/Code
+.config/configstore
 .config/dconf
 .config/google-chrome
 .config/gtk-3.0
+.config/kconf_updaterc
+.config/kde.org
+.config/kdeglobals
+.config/sessions
 
 .config/mpd/playlists
 .config/mpd/database
@@ -33,6 +42,7 @@
 .config/pulse/
 .config/yay
 .config/mimeapps.list
+.config/trashrc
 
 
 Desktop
@@ -49,6 +59,9 @@ yay/
 .fehbg
 .gitconfig
 .lesshst
+.pulse-cookie
+.steampath
+.steampid
 .viminfo
 .Xauthority
 .xsession-errors
