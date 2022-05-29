@@ -12,7 +12,12 @@ filetype plugin on
 set fileformat=unix
 set encoding=UTF-8
 
-set clipboard=unnamedplus
+
+if has("nvim")
+  set clipboard+=unnamedplus " install xclip
+else 
+  set clipboard=unnamedplus
+endif
 
 au BufNewFile,BufRead *.py
     \ set tabstop=4 |
@@ -50,13 +55,14 @@ set showcmd
 set noshowmode
 set conceallevel=1      " makes things compact 
 
-set noerrorbells visualbell t_vb=
+set noerrorbells visualbell t_vb= " disables noises
 
 set ignorecase
 set smartcase
 set incsearch
 set hlsearch
 nnoremap <CR> :noh<CR><CR>:<backspace>
+
 
 " Use a line cursor within insert mode and a block cursor everywhere else.
 "
@@ -81,8 +87,8 @@ so ~/.vim/plugin/setcolors.vim  " for switching the colorthemes
 set mouse=a                     " enables mouse things
 
 
-let g:ale_disable_lsp = 1       " so coc and ale don't clash  
-let g:ale_set_balloons = 0      " makes screen scroll up when mouse moved
+
+
 
 
 
@@ -98,16 +104,16 @@ Plug 'dylanaraps/wal.vim'
 Plug 'ap/vim-css-color'
 
 
-Plug 'scrooloose/nerdtree'
-
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 
+
+
+
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" coc-json, coc-tsserver, coc-clangd, coc-html, coc-css
+" coc-json, coc-tsserver, coc-clangd, coc-html, coc-css, coc-rust-analyzer
 Plug 'dense-analysis/ale'
 "Plug 'sheerun/vim-polyglot'
 Plug 'jelera/vim-javascript-syntax'
@@ -120,14 +126,22 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
 Plug 'somini/vim-autoclose'
 Plug 'Yggdroot/indentLine'
-"Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc-snippets'
 Plug 'honza/vim-snippets'
-
+"Plug 'SirVer/ultisnips'
+Plug 'junegunn/fzf.vim'
+" Plug 'tpope/vim-eunuch'     " ex. mkdir commands from vim :
 
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+
+
+Plug 'scrooloose/nerdtree'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'PhilRunninger/nerdtree-visual-selection'
 
 call plug#end()
 
@@ -227,6 +241,12 @@ let g:indentLine_setColors = 0
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
+ "inoremap <silent><expr> <TAB>
+      "\ pumvisible() ? "\<C-n>" :
+      "\ <SID>check_back_space() ? "\<TAB>" : ""
+ "inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+ " with coc refresh, opens list with tab
  inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -242,13 +262,17 @@ let g:indentLine_setColors = 0
 " find the site and add the other script also
 
 " jumps to next placeholder
-let g:coc_snippet_next = '<tab>'
+"let g:coc_snippet_next = '<tab>'
 
 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
 let g:coc_snippet_next = '<c-j>'
 "
 " " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 let g:coc_snippet_prev = '<c-k>'
+
+
+"let g:coc_suggest_disable = 1
+"let g:coc_diagnostic_disable
 
 
 
@@ -260,8 +284,8 @@ let g:coc_snippet_prev = '<c-k>'
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " " format on enter, <cr> could be remapped by other vim plugin
- "inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                               "\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " makes enter confirm the selected competion
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -277,7 +301,7 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Ale things"
 
-"let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 1
 let g:ale_hover_to_preview = 0
 let g:ale_sign_column_always = 1
 let g:ale_cursor_detail = 0
@@ -286,6 +310,8 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters_explicit = 1
 
+let g:ale_disable_lsp = 1       " so coc and ale don't clash  
+let g:ale_set_balloons = 0      " makes screen scroll up when mouse moved
 
 
 " easymotion things"
@@ -320,3 +346,50 @@ let g:indentLine_color_term = 239
 
 " so coc's ctrl y doesnt clash with this
 let g:user_emmet_leader_key=','
+
+
+
+
+" Ultisnips things
+
+" Trigger configuration. You need to change this to something other than <tab>
+" if you use one of the following:
+" " - https://github.com/Valloric/YouCompleteMe
+" " - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<c-tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+
+
+
+" fzf things
+
+" ctrl f to search
+nnoremap <silent> <C-f> :Files<CR>
+
+
+
+
+" nerdtree icon highlight things
+
+
+
+
+
+" nerdtree devicons things
+
+set guifont=Droid\ Sans\ Mono\ Nerd\ Font\ Complete\ 20
+
+" disables all
+let g:webdevicons_enable_nerdtree = 1
+
+if exists("g:loaded_webdevicons")
+  call webdevicons#refresh()
+endif
+
+let g:WebDevIconsUnicodeGlyphDoubleWidth = 1 " uses double sized icons
+
+
+
+

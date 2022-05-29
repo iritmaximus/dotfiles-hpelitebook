@@ -1,12 +1,18 @@
 {
   "diagnostic.displayByAle": true,
+
+  "snippets.snipmate.enable": false,
   "snippets.ultisnips.directories": [
-    "vim-snippets",
+    "vim-snippets/UltiSnips",
     "UltiSnips"
   ],
   "snippets.extends": {
     "javascriptreact": ["javascript", "html"],
     "typescriptreact": ["javascript"],
-    "typescript": ["javascript"]
-  }
+    "typescript": ["javascript"],
+    "python": ["python"],
+    "cpp": ["cpp"]
+  },
+
+  "suggest.floatEnable": true
 }

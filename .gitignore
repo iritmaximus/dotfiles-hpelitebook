@@ -29,7 +29,7 @@
 .config/kconf_updaterc
 .config/kde.org
 .config/kdeglobals
-.config/sessions
+.config/session
 
 .config/mpd/playlists
 .config/mpd/database
@@ -50,9 +50,12 @@ Downloads
 docs/
 github/
 music/
+node_modules/
 temp/
 yay/
 
+package.json
+package-lock.json
 .bash_history
 .bash_logout
 .bash_profile
