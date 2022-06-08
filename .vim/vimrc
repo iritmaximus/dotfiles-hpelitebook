@@ -29,6 +29,11 @@ au BufNewFile,BufRead *.js
     \ set softtabstop=2 |
     \ set shiftwidth=2 |
 
+au BufNewFile,BufRead *.md 
+    \ set wrap linebreak |
+    \ nnoremap <j>:<gj> |
+    \ nnoremap <k>:<gk> |
+
 " tried to remove linewrapping
 "au BufNewFile,BufRead *.txt
     "\ 
@@ -88,6 +93,8 @@ set mouse=a                     " enables mouse things
 
 
 
+set updatetime=750
+
 
 
 
@@ -97,10 +104,10 @@ set mouse=a                     " enables mouse things
 call plug#begin('~/.vim/plugged')
 
 
-Plug 'morhetz/gruvbox'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'dylanaraps/wal.vim'
+"Plug 'morhetz/gruvbox'
+"Plug 'dracula/vim', { 'as': 'dracula' }
 "Plug 'jelera/vim-javascript-syntax'
+Plug 'dylanaraps/wal.vim'
 Plug 'ap/vim-css-color'
 
 
@@ -108,16 +115,13 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 
-
-
-
-Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-json, coc-tsserver, coc-clangd, coc-html, coc-css, coc-rust-analyzer
-Plug 'dense-analysis/ale'
 "Plug 'sheerun/vim-polyglot'
+Plug 'dense-analysis/ale'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'mxw/vim-jsx'
+Plug 'mattn/emmet-vim'
 
 
 Plug 'tpope/vim-surround'
@@ -125,11 +129,11 @@ Plug 'preservim/nerdcommenter'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'easymotion/vim-easymotion'
 Plug 'somini/vim-autoclose'
+Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc-snippets'
 Plug 'honza/vim-snippets'
 "Plug 'SirVer/ultisnips'
-Plug 'junegunn/fzf.vim'
 " Plug 'tpope/vim-eunuch'     " ex. mkdir commands from vim :
 
 Plug 'vimwiki/vimwiki'
@@ -138,10 +142,10 @@ Plug 'airblade/vim-gitgutter'
 
 
 Plug 'scrooloose/nerdtree'
-"Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'PhilRunninger/nerdtree-visual-selection'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
 
@@ -150,28 +154,6 @@ call plug#end()
 " WAL things
 
 colorscheme wal
-
-
-" Dracula things
-" colorscheme dracula
-
-
-" commented out to make room for wal 
-
-" Gruvbox things
-"set termguicolors
-"let g:gruvbox_italic=1
-"let g:gruvbox_contrast_dark='soft'
-"colorscheme gruvbox
-"set background=dark
-
-"hi Normal guibg=NONE ctermbg=NONE
-"let g:terminal_ansi_colors = [
-    "\ '#282828', '#cc241d', '#98971a', '#d79921',
-    "\ '#458588', '#b16286', '#689d6a', '#a89984',
-    "\ '#928374', '#fb4934', '#b8bb26', '#fabd2f',
-    "\ '#83a598', '#d3869b', '#8ec07c', '#ebdbb2',
-"\]
 
 
 
@@ -297,21 +279,42 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
     inoremap <silent><expr> <c-@> coc#refresh()
   endif
 
+hi CocFloating ctermbg=0
+hi FloatBorder ctermbg=1 ctermfg=2
 
 
 " Ale things"
 
+
+augroup ale_hover_cursor
+  autocmd!
+  autocmd CursorHold * ALEHover
+augroup END
+
+let g:ale_hover_to_floating_preview = 1
+"let g:ale_hover_to_preview = 1
+
+let g:ale_hover_cursor = 1
+let g:ale_set_balloons = 1      "1 makes screen scroll up when mouse moved
+"let g:ale_cursor_detail = 1
+
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
+
+"let g:ale_list_vertical = 1
+"let g:ale_open_list = 1
+"let g:ale_keep_list_window_open = 1
+
+"let g:ale_list_window_size = 3
+
 let g:ale_fix_on_save = 1
-let g:ale_hover_to_preview = 0
 let g:ale_sign_column_always = 1
-let g:ale_cursor_detail = 0
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_info_str = 'I'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters_explicit = 1
 
 let g:ale_disable_lsp = 1       " so coc and ale don't clash  
-let g:ale_set_balloons = 0      " makes screen scroll up when mouse moved
 
 
 " easymotion things"
@@ -373,6 +376,9 @@ nnoremap <silent> <C-f> :Files<CR>
 
 " nerdtree icon highlight things
 
+let g:NERDTreeDisableFileExtensionHighlight = 1
+let g:NERDTreeDisableExactMatchHighlight = 1
+let g:NERDTreeDisablePatternMatchHighlight = 1
 
 
 
@@ -391,5 +397,8 @@ endif
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1 " uses double sized icons
 
 
+" vim jsx things
+
+let g:jsx_ext_required = 0 
 
 

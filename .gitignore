@@ -1,3 +1,4 @@
+.atom/
 .bento/
 .cache/
 .cargo/
@@ -45,8 +46,8 @@
 .config/trashrc
 
 
-Desktop
-Downloads
+Desktop/
+Downloads/
 docs/
 github/
 music/

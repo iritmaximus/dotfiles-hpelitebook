@@ -1,0 +1,172 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.027  000.027: --- VIM STARTING ---
+000.329  000.302: Allocated generic buffers
+000.524  000.195: locale set
+000.541  000.017: clipboard setup
+000.549  000.008: window checked
+001.674  001.125: inits 1
+001.750  000.076: parsing arguments
+001.753  000.003: expanding arguments
+001.831  000.078: shell init
+002.725  000.894: Termcap init
+002.816  000.091: inits 2
+003.278  000.462: init highlight
+004.450  000.856  000.856: sourcing /usr/share/vim/vimfiles/archlinux.vim
+004.541  001.166  000.310: sourcing /etc/vimrc
+017.416  010.435  010.435: sourcing /usr/share/vim/vim82/colors/lists/default.vim
+017.872  012.617  002.182: sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+018.407  013.351  000.734: sourcing /usr/share/vim/vim82/syntax/synload.vim
+051.373  000.123  000.123: sourcing /usr/share/vim/vimfiles/ftdetect/meson.vim
+051.962  033.349  033.226: sourcing /usr/share/vim/vim82/filetype.vim
+055.364  001.449  001.449: sourcing /usr/share/vim/vim82/autoload/dist/script.vim
+057.592  004.003  002.554: sourcing /usr/share/vim/vim82/scripts.vim
+057.828  053.027  002.324: sourcing /usr/share/vim/vim82/syntax/syntax.vim
+058.353  000.052  000.052: sourcing /usr/share/vim/vim82/filetype.vim
+058.673  000.189  000.189: sourcing /usr/share/vim/vim82/ftplugin.vim
+059.602  000.294  000.294: sourcing /home/martti/.vim/autoclose.vim
+060.076  000.403  000.403: sourcing /home/martti/.vim/plugin/setcolors.vim
+066.775  006.579  006.579: sourcing /home/martti/.vim/autoload/plug.vim
+082.045  001.890  001.890: sourcing /usr/share/vim/vim82/ftoff.vim
+114.949  000.053  000.053: sourcing /home/martti/.vim/plugged/vim-javascript-syntax/ftdetect/javascript.vim
+115.169  000.123  000.123: sourcing /home/martti/.vim/plugged/vim-jsx/ftdetect/javascript.vim
+115.505  000.024  000.024: sourcing /home/martti/.vim/plugged/vim-fugitive/ftdetect/fugitive.vim
+115.740  000.045  000.045: sourcing /usr/share/vim/vimfiles/ftdetect/meson.vim
+116.135  023.008  022.763: sourcing /usr/share/vim/vim82/filetype.vim
+116.685  000.041  000.041: sourcing /usr/share/vim/vim82/ftplugin.vim
+117.337  000.110  000.110: sourcing /usr/share/vim/vim82/indent.vim
+121.559  003.617  003.617: sourcing /usr/share/vim/vim82/colors/lists/default.vim
+122.937  000.391  000.391: sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+123.925  000.283  000.283: sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+124.632  000.278  000.278: sourcing /usr/share/vim/vim82/syntax/syncolor.vim
+125.375  003.587  002.635: sourcing /home/martti/.vim/plugged/wal.vim/colors/wal.vim
+126.143  121.482  028.685: sourcing ~/.vim/vimrc
+126.150  000.224: sourcing vimrc file(s)
+126.532  000.035  000.035: sourcing /home/martti/.vim/plugin/setcolors.vim
+127.617  000.342  000.342: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/init.vim
+129.852  001.251  001.251: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/parts.vim
+130.285  000.034  000.034: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/formatter/short_path.vim
+132.854  000.384  000.384: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/util.vim
+133.017  006.314  004.303: sourcing /home/martti/.vim/plugged/vim-airline/plugin/airline.vim
+133.204  000.073  000.073: sourcing /home/martti/.vim/plugged/vim-airline-themes/plugin/airline-themes.vim
+137.282  003.987  003.987: sourcing /home/martti/.vim/plugged/emmet-vim/plugin/emmet.vim
+137.842  000.144  000.144: sourcing /home/martti/.vim/plugged/coc.nvim/autoload/coc/rpc.vim
+138.507  000.507  000.507: sourcing /home/martti/.vim/plugged/coc.nvim/autoload/coc/util.vim
+139.286  000.353  000.353: sourcing /home/martti/.vim/plugged/coc.nvim/autoload/coc/client.vim
+146.147  008.744  007.740: sourcing /home/martti/.vim/plugged/coc.nvim/plugin/coc.vim
+148.016  000.168  000.168: sourcing /home/martti/.vim/plugged/ale/autoload/ale/events.vim
+148.743  002.421  002.253: sourcing /home/martti/.vim/plugged/ale/plugin/ale.vim
+149.896  000.931  000.931: sourcing /home/martti/.vim/plugged/vim-surround/plugin/surround.vim
+154.331  004.265  004.265: sourcing /home/martti/.vim/plugged/nerdcommenter/plugin/nerdcommenter.vim
+155.181  000.323  000.323: sourcing /home/martti/.vim/plugged/vim-visual-multi/autoload/vm/plugs.vim
+156.416  000.290  000.290: sourcing /home/martti/.vim/plugged/vim-visual-multi/autoload/vm/maps.vim
+156.854  000.192  000.192: sourcing /home/martti/.vim/plugged/vim-visual-multi/autoload/vm/maps/all.vim
+159.712  005.261  004.456: sourcing /home/martti/.vim/plugged/vim-visual-multi/plugin/visual-multi.vim
+171.013  011.171  011.171: sourcing /home/martti/.vim/plugged/vim-easymotion/plugin/EasyMotion.vim
+173.097  001.922  001.922: sourcing /home/martti/.vim/plugged/vim-autoclose/plugin/AutoClose.vim
+173.338  000.084  000.084: sourcing /home/martti/.vim/plugged/vim-snippets/plugin/vimsnippets.vim
+175.230  001.800  001.800: sourcing /home/martti/.vim/plugged/fzf.vim/plugin/fzf.vim
+176.653  000.749  000.749: sourcing /home/martti/.vim/plugged/vimwiki/autoload/vimwiki/vars.vim
+179.713  000.186  000.186: sourcing /home/martti/.vim/plugged/vimwiki/autoload/vimwiki/u.vim
+183.809  008.458  007.523: sourcing /home/martti/.vim/plugged/vimwiki/plugin/vimwiki.vim
+187.055  003.103  003.103: sourcing /home/martti/.vim/plugged/vim-fugitive/plugin/fugitive.vim
+188.074  000.296  000.296: sourcing /home/martti/.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim
+188.867  000.266  000.266: sourcing /home/martti/.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim
+191.375  004.176  003.614: sourcing /home/martti/.vim/plugged/vim-gitgutter/plugin/gitgutter.vim
+192.300  000.336  000.336: sourcing /home/martti/.vim/plugged/nerdtree/autoload/nerdtree.vim
+193.748  000.822  000.822: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/path.vim
+194.303  000.199  000.199: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/menu_controller.vim
+194.694  000.113  000.113: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/menu_item.vim
+195.124  000.154  000.154: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/key_map.vim
+195.730  000.339  000.339: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/bookmark.vim
+196.785  000.731  000.731: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/tree_file_node.vim
+198.147  001.078  001.078: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/tree_dir_node.vim
+198.988  000.554  000.554: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/opener.vim
+199.940  000.656  000.656: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/creator.vim
+200.357  000.143  000.143: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/flag_set.vim
+201.161  000.539  000.539: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/nerdtree.vim
+202.046  000.591  000.591: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/ui.vim
+202.337  000.030  000.030: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/event.vim
+202.677  000.061  000.061: sourcing /home/martti/.vim/plugged/nerdtree/lib/nerdtree/notifier.vim
+203.655  000.686  000.686: sourcing /home/martti/.vim/plugged/nerdtree/autoload/nerdtree/ui_glue.vim
+208.298  000.150  000.150: sourcing /home/martti/.vim/plugged/nerdtree/nerdtree_plugin/exec_menuitem.vim
+209.473  001.127  001.127: sourcing /home/martti/.vim/plugged/nerdtree/nerdtree_plugin/fs_menu.vim
+209.602  000.080  000.080: sourcing /home/martti/.vim/plugged/nerdtree/nerdtree_plugin/vcs.vim
+210.338  000.617  000.617: sourcing /home/martti/.vim/plugged/vim-devicons/nerdtree_plugin/webdevicons.vim
+210.569  019.056  010.050: sourcing /home/martti/.vim/plugged/nerdtree/plugin/NERD_tree.vim
+212.263  000.309  000.309: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline.vim
+214.765  004.085  003.776: sourcing /home/martti/.vim/plugged/vim-devicons/plugin/webdevicons.vim
+216.272  001.344  001.344: sourcing /usr/share/vim/vimfiles/plugin/fzf.vim
+216.767  000.117  000.117: sourcing /usr/share/vim/vim82/plugin/getscriptPlugin.vim
+217.149  000.347  000.347: sourcing /usr/share/vim/vim82/plugin/gzip.vim
+217.596  000.376  000.376: sourcing /usr/share/vim/vim82/plugin/logiPat.vim
+217.686  000.046  000.046: sourcing /usr/share/vim/vim82/plugin/manpager.vim
+218.065  000.343  000.343: sourcing /usr/share/vim/vim82/plugin/matchparen.vim
+219.128  001.014  001.014: sourcing /usr/share/vim/vim82/plugin/netrwPlugin.vim
+219.275  000.065  000.065: sourcing /usr/share/vim/vim82/plugin/rrhelper.vim
+219.367  000.048  000.048: sourcing /usr/share/vim/vim82/plugin/spellfile.vim
+219.690  000.285  000.285: sourcing /usr/share/vim/vim82/plugin/tarPlugin.vim
+219.959  000.219  000.219: sourcing /usr/share/vim/vim82/plugin/tohtml.vim
+220.430  000.431  000.431: sourcing /usr/share/vim/vim82/plugin/vimballPlugin.vim
+220.840  000.345  000.345: sourcing /usr/share/vim/vim82/plugin/zipPlugin.vim
+220.854  003.838: loading plugins
+221.042  000.188: loading packages
+221.421  000.140  000.140: sourcing /home/martti/.vim/plugged/dracula/autoload/dracula.vim
+221.446  000.254  000.114: sourcing /home/martti/.vim/plugged/dracula/after/plugin/dracula.vim
+222.417  000.756  000.756: sourcing /home/martti/.vim/plugged/indentLine/after/plugin/indentLine.vim
+222.468  000.416: loading after plugins
+223.622  001.154: inits 3
+224.023  000.401: reading viminfo
+226.548  002.525: setup clipboard
+226.566  000.018: setting raw mode
+226.576  000.010: start termcap
+226.610  000.034: clearing screen
+227.597  000.582  000.582: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions.vim
+227.877  000.085  000.085: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/quickfix.vim
+228.227  000.055  000.055: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/netrw.vim
+228.474  000.054  000.054: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/fzf.vim
+229.209  000.128  000.128: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/section.vim
+229.871  000.369  000.369: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/highlighter.vim
+230.455  001.591  001.094: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/term.vim
+230.921  000.149  000.149: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/hunks.vim
+231.618  000.379  000.379: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/branch.vim
+231.994  000.106  000.106: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/fugitiveline.vim
+232.440  000.149  000.149: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/ale.vim
+232.949  000.088  000.088: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/coc.vim
+233.450  000.211  000.211: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/whitespace.vim
+233.912  000.120  000.120: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/po.vim
+234.267  000.153  000.153: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/wordcount.vim
+234.759  000.296  000.296: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline.vim
+235.084  000.104  000.104: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+235.544  000.149  000.149: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+236.109  000.277  000.277: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+236.621  000.051  000.051: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/keymap.vim
+237.256  000.067  000.067: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/searchcount.vim
+255.033  000.141  000.141: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/themes.vim
+255.522  000.795  000.654: sourcing /home/martti/.vim/plugged/wal.vim/autoload/airline/themes/wal.vim
+304.329  000.270  000.270: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/builder.vim
+305.230  000.143  000.143: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/default.vim
+411.144  000.306  000.306: sourcing /home/martti/.vim/plugged/ale/autoload/ale.vim
+412.469  179.679: opening buffers
+415.472  000.245  000.245: sourcing /home/martti/.vim/plugged/vim-gitgutter/autoload/gitgutter.vim
+416.197  003.483: BufEnter autocommands
+416.199  000.002: editing files in windows
+416.816  000.617: VimEnter autocommands
+416.819  000.003: before starting main loop
+417.839  000.180  000.180: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/ctrlspace.vim
+418.194  000.170  000.170: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/tabws.vim
+419.256  000.289  000.289: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/builder.vim
+419.655  000.094  000.094: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+424.805  000.053  000.053: sourcing /home/martti/.vim/plugged/vim-devicons/autoload/airline/extensions/tabline/formatters/webdevicons.vim
+425.030  000.052  000.052: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/formatters/unique_tail.vim
+425.305  000.085  000.085: sourcing /home/martti/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/formatters/default.vim
+432.699  000.579  000.579: sourcing /home/martti/.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim
+444.733  010.920  010.920: sourcing /home/martti/.vim/plugged/vim-fugitive/autoload/fugitive.vim
+471.481  000.745  000.745: sourcing /home/martti/.vim/plugged/ale/autoload/ale/engine.vim
+471.840  000.130  000.130: sourcing /home/martti/.vim/plugged/ale/autoload/ale/statusline.vim
+477.871  047.755: first screen update
+477.874  000.003: --- VIM STARTED ---
