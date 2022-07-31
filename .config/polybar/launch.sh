@@ -23,6 +23,9 @@ launch_bar() {
 
   elif [[ "$style" == "pwidgets" ]]; then
 		bash "$dir"/pwidgets/launch.sh --main
+
+  elif [[ "$style" == "grayblocks" ]]; then
+    bash "$dir"/grayblocks/launch.sh --main &
 	else
 		polybar -q main -c "$dir/$style/config.ini" &	
 	fi

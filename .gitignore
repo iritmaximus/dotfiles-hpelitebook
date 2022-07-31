@@ -10,6 +10,7 @@
 .m2/
 .mozilla/
 .npm/
+.mysql/
 .pki/
 .runelite/
 .ssh/
@@ -17,10 +18,12 @@
 .stack/
 .steam/
 .thunderbird/
-.vim/plugged
+.vim/
 .vscode
+.wallpapers-old/
 
 
+.config/Atom
 .config/coc
 .config/Code
 .config/configstore
@@ -63,11 +66,18 @@ package-lock.json
 .fehbg
 .gitconfig
 .lesshst
+.mycli.log
+.myclirc
+.mysql_history
+.netrc
 .pulse-cookie
 .steampath
 .steampid
 .viminfo
+.viminfo.tmp
 .Xauthority
 .xsession-errors
 .xsession-errors.old
+.yarnrc
 debug
+timing.out

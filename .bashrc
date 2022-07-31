@@ -5,10 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#alias ls='ls --color=auto'
-alias ls="lsd --color=auto"
-alias vim="nvim"
-alias vvim="vim"
 
 
 #PS1='[\u@\h \W]\$ '
@@ -35,18 +31,10 @@ PS1+='$(__git_ps1 "--[%s]")'
 PS1+='\n\$\[\033[0m\] '
 PS1+=''
 
-export PATH=/home/martti/.scripts:$PATH
 
-setxkbmap fi
+alias ls='lsd'
+alias cat='bat'
+
+# profile doesnt work
+# setxkbmap fi
 setxkbmap -option caps:escape
-
-autorandr mobile
-(cat ~/.cache/wal/sequences &)
-
-export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
-
-#powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#. /usr/share/powerline/bindings/bash/powerline.sh
-
