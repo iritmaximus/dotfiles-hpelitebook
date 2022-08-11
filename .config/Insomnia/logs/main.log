@@ -1,0 +1,40 @@
+[2022-08-04 09:02:24.704] [info]  Running version 2022.4.2
+[2022-08-04 09:02:24.761] [error] [electron client protocol] FAILED to set default protocol 'insomnia://'
+[2022-08-04 09:02:24.814] [info]  [electron client protocol] the current executable is not the default protocol for 'insomnia://'
+[2022-08-04 09:02:25.024] [info]  [electron client protocol] the default application set for 'insomnia://' is 'insomnia.desktop
+'
+[2022-08-04 09:02:25.899] [info]  [fix] Running database repairs
+[2022-08-04 09:02:26.030] [info]  [db] Initialized DB at /home/martti/.config/Insomnia/insomnia.$TYPE.db
+[2022-08-04 09:02:26.032] [info]  [db] Init responses DB
+[2022-08-04 09:02:26.048] [info]  [localstorage] Initialized at /home/martti/.config/Insomnia/localStorage
+[2022-08-04 09:02:26.478] [info]  [main] Loading file:///opt/insomnia/resources/app.asar/index.html
+[2022-08-04 09:02:27.016] [info]  [updater] Updater not running platform=linux dev=false
+[2022-08-04 09:02:57.321] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/58b5fa56-20b0-475a-988e-590534ded190.response
+[2022-08-04 09:02:57.324] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/01c311d2-0e76-470e-aaeb-868b3cdeb02f.timeline
+[2022-08-04 09:03:58.593] [info]  [response] Delete body 
+[2022-08-04 09:03:58.593] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/dfd6044c-9a82-4c46-8246-4e60ae70f5f5.timeline
+[2022-08-04 09:28:26.138] [info]  [response] Delete body 
+[2022-08-04 09:28:26.138] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/e4df3e4f-78d3-4c59-aaf5-f496369e3139.timeline
+[2022-08-04 09:28:30.227] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/196f1f7f-5c5b-47fe-b9c4-8a237f31fd00.response
+[2022-08-04 09:28:30.229] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/82ca8182-7bf0-49b9-a8b3-ad680a7da57b.timeline
+[2022-08-04 09:28:43.771] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/4d53b3d8-8253-462e-bcc7-0238042f3e42.response
+[2022-08-04 09:28:43.774] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/200d3707-859c-4137-95e1-4443043b45df.timeline
+[2022-08-04 09:30:48.606] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/14271644-9549-4ece-8421-d07ae6c1350f.response
+[2022-08-04 09:30:48.607] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/1af85cb1-5a25-4853-b0ad-59eb067bdcfe.timeline
+[2022-08-04 09:31:13.549] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/60cc6c94-a1dc-4710-b59a-b0aea6b5d1b8.response
+[2022-08-04 09:31:13.550] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/327b5fd2-e7c8-4bf6-820b-ef1ee759c241.timeline
+[2022-08-04 09:32:53.681] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/efa3232a-4071-4ddb-aa7c-a03242c2f747.response
+[2022-08-04 09:32:53.681] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/96cbb8e6-997d-473a-b1f9-bcb35608ce36.timeline
+[2022-08-04 09:33:32.594] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/005940c7-1152-4c26-90eb-f98e7cdb76f6.response
+[2022-08-04 09:33:32.594] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/c10d427c-a84d-4531-8d74-1aae6a9bb0b7.timeline
+[2022-08-04 09:34:01.887] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/41343ee9-4f4f-46f4-9d29-5c19a632af49.response
+[2022-08-04 09:34:01.888] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/9fbbe4be-6f02-4eec-b044-5806cfc69848.timeline
+[2022-08-04 09:34:11.268] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/fa96d432-f0cf-4ac2-8ee8-b3ef49333abc.response
+[2022-08-04 09:34:11.269] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/c3db6a48-4b5b-49a5-8fc8-8dae347291a7.timeline
+[2022-08-04 09:40:41.027] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/4f1db1c6-8554-45e0-a6ba-896c68e479a3.response
+[2022-08-04 09:40:41.029] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/aea2b2b5-ca9b-4e97-aea0-5d8017f56de8.timeline
+[2022-08-04 09:54:02.715] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/94ec87d7-dbd4-450e-b29e-f4c05e19c206.response
+[2022-08-04 09:54:02.716] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/30ee542b-f450-4980-8a4b-30896d6492c1.timeline
+[2022-08-04 09:54:31.280] [info]  [response] Delete body /home/martti/.config/Insomnia/responses/0b7a9f73-aef5-4c02-ba2f-429e313b1600.response
+[2022-08-04 09:54:31.280] [info]  [response] Delete timeline /home/martti/.config/Insomnia/responses/fb000af2-5b6a-4a0d-9c1d-6e93f9d8da6b.timeline
+[2022-08-04 12:02:27.017] [info]  [updater] Updater not running platform=linux dev=false

@@ -1,0 +1,121 @@
+[2022-08-03 13:43:16.484] [info]  [db] Initialized DB client
+[2022-08-03 13:43:16.658] [warn]  The vm module of Node.js is deprecated in the renderer process and will be removed.
+[2022-08-03 13:43:16.693] [warn]  The vm module of Node.js is deprecated in the renderer process and will be removed.
+[2022-08-03 13:43:19.328] [info]  [app] invalid activity "null"; navigating to home
+[2022-08-03 13:43:19.353] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.363] [info]  [FileSystemDriver] Initialized in "/home/martti/.config/Insomnia/version-control"
+[2022-08-03 13:43:19.365] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.367] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.377] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.380] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.384] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.385] [info]  [App] Forcing update from environment change [
+  'insert',
+  {
+    _id: 'env_83b9c6212caab954f2a84ee24b694cdb0f689533',
+    type: 'Environment',
+    parentId: 'wrk_10ac48ee35c741a890535cd4b6e3c800',
+    modified: 1659523399381,
+    created: 1659523399381,
+    name: 'Base Environment',
+    data: {},
+    dataPropertyOrder: null,
+    color: null,
+    isPrivate: false,
+    metaSortKey: 1659523399381
+  },
+  false
+]
+[2022-08-03 13:43:19.392] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.398] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.400] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.402] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.409] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.412] [info]  [app] Waiting to finish booting
+[2022-08-03 13:43:19.450] [info]  [FileSystemDriver] Initialized in "/home/martti/.config/Insomnia/version-control"
+[2022-08-03 13:43:19.450] [info]  [sync] checking for collections which need to be moved into a remote project
+[2022-08-03 13:43:30.402] [warn]  [toast] Failed to fetch user notifications Error: Unexpected plaintext response
+    at s1e (file:///opt/insomnia/resources/app.asar/index.6dbd5a2c.js:64:61236)
+    at async cz._checkForNotifications (file:///opt/insomnia/resources/app.asar/index.6dbd5a2c.js:1874:1136)
+[2022-08-03 13:46:11.280] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:46:21.480] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Request was cancelled
+[2022-08-03 13:49:55.191] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:50:06.256] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Request was cancelled
+[2022-08-03 13:52:45.809] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:53:02.007] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Request was cancelled
+[2022-08-03 13:57:44.462] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:57:45.050] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 13:58:27.575] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:58:27.700] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-03 13:58:40.681] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:58:41.319] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 13:59:54.728] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 13:59:55.233] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 14:03:05.295] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:03:05.860] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=200
+[2022-08-03 14:14:57.951] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:14:58.097] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-03 14:52:31.368] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:52:31.833] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=401
+[2022-08-03 14:52:38.428] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:52:38.457] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-03 14:52:42.841] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:52:44.296] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=402
+[2022-08-03 14:53:00.218] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:53:00.549] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 14:53:52.399] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:53:52.738] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 14:55:18.187] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:55:18.557] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 14:56:31.137] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:56:31.435] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 14:56:57.328] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:56:57.671] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=405
+[2022-08-03 14:57:12.977] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 14:57:13.287] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=406
+[2022-08-03 15:01:27.165] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 15:01:27.736] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=400
+[2022-08-03 16:32:17.240] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:32:18.116] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=400
+[2022-08-03 16:37:31.479] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:37:32.150] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=400
+[2022-08-03 16:43:54.196] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:44:03.531] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Request was cancelled
+[2022-08-03 16:47:52.374] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:48:00.547] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Request was cancelled
+[2022-08-03 16:50:03.993] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:50:04.187] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 16:50:29.406] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:50:29.614] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 16:58:22.565] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 16:58:22.821] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 17:02:22.054] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:02:22.764] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 17:12:08.137] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:12:08.774] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 17:13:19.478] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:13:20.035] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 17:13:43.976] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:13:44.572] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 17:20:28.130] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:20:28.881] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 17:20:50.569] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:20:51.325] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 17:29:36.092] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:29:36.999] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 17:32:34.295] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:32:35.160] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 17:35:58.685] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:35:58.803] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-03 17:36:03.029] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:36:03.864] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=404
+[2022-08-03 17:44:04.953] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 17:44:05.799] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 18:12:33.032] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 18:12:33.116] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-03 20:34:33.050] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 20:34:33.640] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-03 20:36:57.179] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 20:36:57.217] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-03 20:40:02.610] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-03 20:40:02.657] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201

@@ -1,0 +1,172 @@
+[
+	{
+		"value": "Preparing request to http://localhost:3000/api/bio/text",
+		"name": "TEXT",
+		"timestamp": 1659537363151
+	},
+	{
+		"value": "Current time is 2022-08-03T14:36:03.151Z",
+		"name": "TEXT",
+		"timestamp": 1659537363151
+	},
+	{
+		"value": "Enable automatic URL encoding",
+		"name": "TEXT",
+		"timestamp": 1659537363151
+	},
+	{
+		"value": "Using default HTTP version",
+		"name": "TEXT",
+		"timestamp": 1659537363157
+	},
+	{
+		"value": "Enable SSL validation",
+		"name": "TEXT",
+		"timestamp": 1659537363157
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: INIT => CONNECT handle 0x218604a32008; line 1789 (connection #-5000)\n",
+		"timestamp": 1659537363158
+	},
+	{
+		"name": "TEXT",
+		"value": "Added connection 35. The cache now contains 1 members\n",
+		"timestamp": 1659537363159
+	},
+	{
+		"name": "TEXT",
+		"value": "Hostname localhost was found in DNS cache\n",
+		"timestamp": 1659537363159
+	},
+	{
+		"name": "TEXT",
+		"value": "family0 == v4, family1 == v6\n",
+		"timestamp": 1659537363159
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying 127.0.0.1:3000...\n",
+		"timestamp": 1659537363159
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: CONNECT => CONNECTING handle 0x218604a32008; line 1850 (connection #35)\n",
+		"timestamp": 1659537363159
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to localhost (127.0.0.1) port 3000 (#35)\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: CONNECTING => PROTOCONNECT handle 0x218604a32008; line 1982 (connection #35)\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: PROTOCONNECT => DO handle 0x218604a32008; line 2003 (connection #35)\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "POST /api/bio/text HTTP/1.1\r\nHost: localhost:3000\r\nUser-Agent: insomnia/2022.4.2\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 92\r\n\r\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "{\n\t\"Page\": \"bio\",\n\t\"Text\": \"This is the text that would go into bio.text\",\n\t\"Type\": \"text\"\n}",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: DO => DID handle 0x218604a32008; line 2077 (connection #35)\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: DID => PERFORMING handle 0x218604a32008; line 2196 (connection #35)\n",
+		"timestamp": 1659537363160
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "HTTP 1.1 or later with persistent connection\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 404 Not Found\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "X-Powered-By: Express\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: text/plain; charset=utf-8\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Length: 9\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "ETag: W/\"9-0gXL1ngzMqISxa6S1zx3F4wtLyg\"\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Wed, 03 Aug 2022 14:36:03 GMT\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Keep-Alive: timeout=5\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 9 B chunk",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: PERFORMING => DONE handle 0x218604a32008; line 2395 (connection #35)\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "multi_done\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #35 to host localhost left intact\n",
+		"timestamp": 1659537363858
+	},
+	{
+		"name": "TEXT",
+		"value": "Expire cleared (transfer 0x218604a32008)\n",
+		"timestamp": 1659537363858
+	}
+]

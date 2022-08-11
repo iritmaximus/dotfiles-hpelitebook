@@ -2,8 +2,7 @@
 # ~/.bashrc
 #
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# If not running interactively, don't do anything [[ $- != *i* ]] && return
 
 
 
@@ -24,16 +23,19 @@ source .scripts/git-prompt.sh
 # PS1='\[\033[1;34m\][\h:\W]$(__git_ps1 "--[%s]")\$\[\033[0m\] '
 PS1='\[\033[1;34m\]'
 PS1+='['
-PS1+='\h:'
+# PS1+='\h:'
 PS1+='\w'
 PS1+=']'
-PS1+='$(__git_ps1 "--[%s]")'
+# PS1+='$(__git_ps1 "--[%s]")'
+# PS+=''
 PS1+='\n\$\[\033[0m\] '
 PS1+=''
 
 
 alias ls='lsd'
 alias cat='bat'
+# alias vim='nvim'
+# alias vvim='vim'
 
 # profile doesnt work
 # setxkbmap fi

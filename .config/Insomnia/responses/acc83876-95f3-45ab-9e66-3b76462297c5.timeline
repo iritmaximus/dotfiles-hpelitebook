@@ -1,0 +1,117 @@
+[
+	{
+		"value": "Preparing request to http://localhost:3000/api/bio/text",
+		"name": "TEXT",
+		"timestamp": 1659525298055
+	},
+	{
+		"value": "Current time is 2022-08-03T11:14:58.055Z",
+		"name": "TEXT",
+		"timestamp": 1659525298055
+	},
+	{
+		"value": "Enable automatic URL encoding",
+		"name": "TEXT",
+		"timestamp": 1659525298055
+	},
+	{
+		"value": "Using default HTTP version",
+		"name": "TEXT",
+		"timestamp": 1659525298066
+	},
+	{
+		"value": "Enable SSL validation",
+		"name": "TEXT",
+		"timestamp": 1659525298066
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: INIT => CONNECT handle 0x2186052d8008; line 1789 (connection #-5000)\n",
+		"timestamp": 1659525298072
+	},
+	{
+		"name": "TEXT",
+		"value": "Too old connection (712 seconds), disconnect it\n",
+		"timestamp": 1659525298072
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection 7 seems to be dead!\n",
+		"timestamp": 1659525298072
+	},
+	{
+		"name": "TEXT",
+		"value": "The cache now contains 0 members\n",
+		"timestamp": 1659525298072
+	},
+	{
+		"name": "TEXT",
+		"value": "Closing connection 7\n",
+		"timestamp": 1659525298072
+	},
+	{
+		"name": "TEXT",
+		"value": "Added connection 8. The cache now contains 1 members\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "Hostname in DNS cache was stale, zapped\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "family0 == v4, family1 == v6\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying 127.0.0.1:3000...\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "STATE: CONNECT => CONNECTING handle 0x2186052d8008; line 1850 (connection #8)\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "connect to 127.0.0.1 port 3000 failed: Connection refused\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying ::1:3000...\n",
+		"timestamp": 1659525298073
+	},
+	{
+		"name": "TEXT",
+		"value": "connect to ::1 port 3000 failed: Connection refused\n",
+		"timestamp": 1659525298076
+	},
+	{
+		"name": "TEXT",
+		"value": "Failed to connect to localhost port 3000 after 4 ms: Connection refused\n",
+		"timestamp": 1659525298076
+	},
+	{
+		"name": "TEXT",
+		"value": "multi_done\n",
+		"timestamp": 1659525298076
+	},
+	{
+		"name": "TEXT",
+		"value": "The cache now contains 0 members\n",
+		"timestamp": 1659525298076
+	},
+	{
+		"name": "TEXT",
+		"value": "Closing connection 8\n",
+		"timestamp": 1659525298077
+	},
+	{
+		"name": "TEXT",
+		"value": "Expire cleared (transfer 0x2186052d8008)\n",
+		"timestamp": 1659525298077
+	}
+]

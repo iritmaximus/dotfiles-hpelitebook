@@ -1,0 +1,34 @@
+[2022-08-04 09:02:32.124] [info]  [db] Initialized DB client
+[2022-08-04 09:02:32.274] [warn]  The vm module of Node.js is deprecated in the renderer process and will be removed.
+[2022-08-04 09:02:32.303] [warn]  The vm module of Node.js is deprecated in the renderer process and will be removed.
+[2022-08-04 09:02:34.872] [info]  [FileSystemDriver] Initialized in "/home/martti/.config/Insomnia/version-control"
+[2022-08-04 09:02:34.876] [info]  [FileSystemDriver] Initialized in "/home/martti/.config/Insomnia/version-control"
+[2022-08-04 09:02:34.877] [info]  [sync] checking for collections which need to be moved into a remote project
+[2022-08-04 09:02:56.826] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:02:57.276] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:03:58.394] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:03:58.575] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:28:26.044] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:28:26.115] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-04 09:28:29.962] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:28:30.193] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:28:43.534] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:28:43.693] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:30:48.376] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:30:48.549] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:31:13.293] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:31:13.513] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:32:53.542] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:32:53.663] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:33:32.499] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:33:32.578] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:34:01.609] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:34:01.854] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-04 09:34:11.023] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:34:11.182] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=201
+[2022-08-04 09:40:39.919] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:40:40.991] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403
+[2022-08-04 09:54:02.496] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:54:02.638] [info]  [network] Response failed req=req_77b5d46269084b40a6af8010f8baedfb err=Error: Couldn't connect to server
+[2022-08-04 09:54:30.557] [info]  [network] Sending req=req_77b5d46269084b40a6af8010f8baedfb env=n/a
+[2022-08-04 09:54:31.267] [info]  [network] Response succeeded req=req_77b5d46269084b40a6af8010f8baedfb status=403

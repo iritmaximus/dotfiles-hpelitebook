@@ -56,6 +56,7 @@ github/
 music/
 node_modules/
 temp/
+vimwiki/
 yay/
 
 package.json
