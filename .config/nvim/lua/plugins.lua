@@ -15,10 +15,10 @@ return require('packer').startup(function(use)
 
 
   -- LSP things
-  use({
-    "dense-analysis/ale",
-    config = function() require("config.ale").setup() end,
-  })
+  -- use({
+  --   "dense-analysis/ale",
+  --   config = function() require("config.ale").setup() end,
+  -- })
   -- use({
   --   "jose-elias-alvarez/null-ls.nvim",
   --   config = function() require("plugins.null-ls").setup() end,

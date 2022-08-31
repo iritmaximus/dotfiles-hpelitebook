@@ -5,18 +5,21 @@ nnoremap <SPACE> <Nop>        " make sure space is not mapped to something else
 let mapleader = "\<SPACE>"    " leader key mapped to space
 
 set nocompatible              " needs to be on for reasons
-
 syntax on                     " syntax highlighting
 filetype plugin on            " idunno plugins work
 
 set timeoutlen=1000 ttimeoutlen=10  " disables esc wait time
-set updatetime=750                  " sets how often vim updates ex. plugins
-
+set updatetime=300                  " sets how often vim updates ex. plugins
 set fileformat=unix           " linebreaks to unix?
 set encoding=UTF-8            " propably dont have to do this but ok
 
-set clipboard+=unnamedplus  " uses system clipboard
+if has("nvim")
+  set clipboard+=unnamedplus  " uses system clipboard
+else
+  set clipboard=unnamedplus   " not sure if this has to be different, dont bother to test
+endif
 
+autocmd BufEnter * lcd %:p:h  " set vim dir to where vim was opened
 
 " different tab lengths for different filetypes
 au BufNewFile,BufRead *.py
@@ -39,6 +42,7 @@ set expandtab             " no idea
 
 set nowrap                " no linewrapping if lines go over the border
 set textwidth=0           " disables line hard wrapping
+set wrapmargin=0          " trying harder to disable the wrapping
 set list                  " absolutely no clue
 
 " hidden characters
@@ -50,24 +54,19 @@ set listchars=eol:.,tab:>-,trail:~,extends:>,precedes:<
 set number                " set line numbers
 set relativenumber        " set relative line numbers
 set scrolloff=10          " screen rolls x amount of lines before
-set signcolumn=auto       " shows the column on the left if there is something
+set signcolumn=yes       " shows the column on the left if there is something
 " to show
 
 set showcmd               " lol not this one either
 " set noshowmode            " shows which mode you are in
 set conceallevel=0        " does not 'conceal' for ex. quotations in json
-
 set noerrorbells visualbell t_vb= " disables noises
 
 set ignorecase            " search is not case sensitive if all lower
 set smartcase             " if you include upper, then it is case sensitive
-
 set incsearch             " suggest autocomplete's smartly???
 set hlsearch              " highlights everything searched
 
-set mouse=a               " mouse support
-
-set t_Co=256              " set support for 256 colors
 
 " Reference chart of values:
 "   Ps = 0  -> blinking block.
@@ -80,6 +79,10 @@ set t_Co=256              " set support for 256 colors
 " let &t_SI = "\e[6 q"
 " let &t_EI = "\e[2 q"
 
+set mouse=a                 " mouse support
+set t_Co=256                " 256 color support
+
+
 
 " SOURCING
 
@@ -88,11 +91,11 @@ set t_Co=256              " set support for 256 colors
 
 
 
-
-
 " KEYBINDS
 nnoremap <CR> :noh<CR><CR>:<backspace>
-
+nnoremap <Leader>s :so ~/.config/nvim/init.vim<CR>
+nnoremap <Leader>e :edit .<CR>
+nnoremap <Leader>n :tabnew<CR>
 
 
 " PLUGINS
@@ -117,6 +120,16 @@ Plug 'tpope/vim-commentary'         " comments lines
 Plug 'somini/vim-autoclose'         " closes brackets smartly
 Plug 'Yggdroot/indentLine'          " shows | on different indenting levels
 
+" Plug 'sheerun/vim-polyglot'       " didin't work properly with typescript
+Plug 'leafgarland/typescript-vim'   " typescript syntax highlighting
+Plug 'maxmellon/vim-jsx-pretty'     " jsx aka react syntax highlighting
+
+Plug 'takac/vim-hardtime'
+Plug 'vimwiki/vimwiki'
+
+" nvim spesific
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}   " not sure how to use in init.vim
+" Plug 'tree-sitter/tree-sitter-typescript'
 
 call plug#end()
 
@@ -130,10 +143,9 @@ colorscheme dracula                       " for the nice colors
 
 
 " indentLine
-let g:indentLine_setColors = 0
-
-let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " what chars are used to show indention xd
+let g:indentLine_setColors = 0                    " not sure what this does
 let g:indentLine_color_term = 239                 " set the iL color to gray
+let g:indentLine_char_list = ['|', '¦', '┆', '┊'] " what chars are used to show indention xd
 
 
 " ale
@@ -144,15 +156,11 @@ augroup ale_hover_cursor
   autocmd CursorHold * ALEHover
 augroup END
 
-
 let g:ale_hover_to_floating_preview = 1     " not sure if this helps
-
 let g:ale_hover_cursor = 1      " enables ale to show things on hover
 let g:ale_set_balloons = 1      " enables ale to use hover 'balloons' aka preview window
 
-
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰', '│', '─']
-
 
 let g:ale_fix_on_save = 1                       " ale triggers fixer on file save
 let g:ale_sign_column_always = 1                " shows char in the signcolumn
@@ -162,10 +170,16 @@ let g:ale_echo_msg_info_str = 'I'               " info char
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'    " message format
 let g:ale_linters_explicit = 1                  " run only linters i specify
 
+let g:ale_fixers = {
+\  "*": [ "remove_trailing_lines", "trim_whitespace" ]
+\}
 
+" vim hard mode
 
+let g:hardtime_default_on = 0
 
-
+nnoremap <Leader>hh :HardTimeToggle<CR>
+nnoremap <Leader>H :HardTimeOff<CR>
 
 
 " COOL PLUGINLESS STUFF
@@ -206,7 +220,7 @@ command! MakeTags !ctags -R .  " command to create the 'tags'
 " FILE BROWSING:
 " Tweaks for browsing
 let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
+let g:netrw_browse_split=0  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
 let g:netrw_list_hide=netrw_gitignore#Hide()
@@ -225,8 +239,3 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " NOW WE CAN:
 " - Take over the world!
 "   (with much fewer keystrokes)
-
-
-" Neovim things
-
-

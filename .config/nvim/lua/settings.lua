@@ -8,7 +8,7 @@ g.mapleader      = ' '
 g.maplocalleader = ' '
 
 -- syntax
-vim.cmd([[ syntax enable ]])
+vim.cmd([[ syntax on ]])
 
 -- clipboard
 o.clipboard = 'unnamedplus'
@@ -17,7 +17,7 @@ o.clipboard = 'unnamedplus'
 o.number         = true               -- set line numbers
 o.relativenumber = true       -- set relative line numbers
 o.scrolloff      = 10              -- screen rolls x amount of lines before
-o.signcolumn     = 'auto'         -- shows the column on the left if there is something to show
+o.signcolumn     = 'yes'         -- shows the column on the left if there is something to show
 
 
 -- tabs and indenting
@@ -44,7 +44,7 @@ o.cursorcolumn = false       -- vertical cursorline
 
 -- bottom row commands
 o.showcmd   = true              -- lol not this one either
-o.showmode  = false            -- shows which mode you are in
+o.showmode  = true            -- shows which mode you are in
 o.conceallevel = 0            -- does not 'conceal' for ex. quotations in json
 
 
@@ -86,6 +86,3 @@ vim.cmd("colorscheme dracula")
 -- o.wildmenu = true
 
 -- command! MakeTags !ctags -R .  " command to create the 'tags'
-
-
-

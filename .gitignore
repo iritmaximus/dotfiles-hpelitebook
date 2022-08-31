@@ -22,6 +22,9 @@
 .vscode
 .wallpapers-old/
 
+.fceux
+.fltk
+
 
 .config/Atom
 .config/coc
@@ -34,6 +37,7 @@
 .config/kde.org
 .config/kdeglobals
 .config/session
+.config/Insomnia
 
 .config/mpd/playlists
 .config/mpd/database
@@ -48,6 +52,7 @@
 .config/mimeapps.list
 .config/trashrc
 
+.config/nvim/plugged
 
 Desktop/
 Downloads/
