@@ -21,6 +21,7 @@
 .vim/
 .vscode
 .wallpapers-old/
+.histfile
 
 .fceux
 .fltk
